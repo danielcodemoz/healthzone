@@ -1,0 +1,19 @@
+{
+  "name": "healthzone",
+  "version": "1.0.0",
+  "private": true,
+  "description": "HealthZone - Personal Health Assistant Dashboard",
+  "scripts": {
+    "dev": "concurrently -n server,client -c blue,green \"cd server && node index.js\" \"cd client && npm run dev\"",
+    "build": "cd client && npm run build",
+    "preview": "cd client && npm run preview",
+    "install:all": "npm install && cd server && npm install && cd ../client && npm install",
+    "postinstall": "cd server && npm install && cd ../client && npm install",
+    "reset-db": "node -e \"const fs=require('fs');const p='server/database/health_assistant.db';if(fs.existsSync(p)){fs.unlinkSync(p);console.log('Database reset. Restart to re-seed.')}else{console.log('No DB found')}\"",
+    "clean": "node -e \"const fs=require('fs');const r=d=>{if(fs.existsSync(d))fs.rmSync(d,{recursive:true,force:true})};r('node_modules');r('server/node_modules');r('client/node_modules');r('server/database/health_assistant.db');console.log('Cleaned. Run npm install to reinstall.')\"",
+    "update": "npm install && cd server && npm update && cd ../client && npm update && echo Update complete!"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}

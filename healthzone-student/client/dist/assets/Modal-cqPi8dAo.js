@@ -1,0 +1,6 @@
+import{d as o,j as a,a as r,m as i,X as m}from"./index-DvWX3Y4B.js";/**
+ * @license lucide-react v0.468.0 - ISC
+ *
+ * This source code is licensed under the ISC license.
+ * See the LICENSE file in the root directory of this source tree.
+ */const p=o("Pencil",[["path",{d:"M21.174 6.812a1 1 0 0 0-3.986-3.987L3.842 16.174a2 2 0 0 0-.5.83l-1.321 4.352a.5.5 0 0 0 .623.622l4.353-1.32a2 2 0 0 0 .83-.497z",key:"1a8usu"}],["path",{d:"m15 5 4 4",key:"1mk7zo"}]]),d={sm:"max-w-md",md:"max-w-lg",lg:"max-w-2xl"};function u({open:t,onClose:e,title:s,children:c,size:l="md"}){return a.jsx(r,{children:t&&a.jsx(i.div,{initial:{opacity:0},animate:{opacity:1},exit:{opacity:0},className:"fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/40 backdrop-blur-sm",onClick:e,children:a.jsxs(i.div,{initial:{opacity:0,scale:.95,y:10},animate:{opacity:1,scale:1,y:0},exit:{opacity:0,scale:.95,y:10},transition:{duration:.2},className:`${d[l]} w-full glass-card p-6`,onClick:n=>n.stopPropagation(),children:[s&&a.jsxs("div",{className:"flex items-center justify-between mb-4",children:[a.jsx("h3",{className:"text-lg font-semibold",children:s}),a.jsx("button",{onClick:e,className:"p-1 rounded-lg hover:bg-surface-100 dark:hover:bg-surface-700","aria-label":"Close",children:a.jsx(m,{size:20})})]}),c]})})})}export{u as M,p as P};
