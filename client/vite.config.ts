@@ -6,7 +6,10 @@ export default defineConfig({
   server: {
     port: 5173,
     proxy: {
-      '/api': 'https://healthzone-backend.onrender.com',
+      '/api': {
+        target: 'http://localhost:3005',
+        changeOrigin: true,
+      },
     },
   },
 });
